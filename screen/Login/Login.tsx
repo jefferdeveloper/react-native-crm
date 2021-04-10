@@ -1,7 +1,7 @@
-import React, { useState, useRef } from "react";
+import React from "react";
 import { View, Text } from "react-native";
 
-export default function Login() {
+export default function Login({ navigation }) {
   return (
     <View>
       <Text>Login body</Text>
