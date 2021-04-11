@@ -29,8 +29,6 @@ import Login from "../screen/Login/Login";
 import Dashboard from "../screen/Dashboard/Dashboard";
 
 export default function NavMain() {
-  const auth = false;
-
   useEffect(() => {
     return () => {
       isReadyRef.current = false;
@@ -44,7 +42,7 @@ export default function NavMain() {
       }}
     >
       <Drawer.Navigator initialRouteName="Login">
-        {auth && <Drawer.Screen name="Login" component={Login} />}
+        <Drawer.Screen name="Login" component={Login} />
         <Drawer.Screen name="Dashboard" component={Dashboard} />
       </Drawer.Navigator>
     </NavigationContainer>

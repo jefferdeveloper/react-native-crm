@@ -1,6 +1,12 @@
 import React from "react";
-import { View } from "react-native";
+import NavMain from "../nav/NavMain";
+import Header from "./Header";
 
 export default function Admin({ children }) {
-  return <>{children}</>;
+  return (
+    <>
+      <Header />
+      <NavMain />
+    </>
+  );
 }
