@@ -23,3 +23,7 @@ export function navigate(name, params) {
 export function navigateDrawerOpen() {
   navigationRef.current?.dispatch(DrawerActions.openDrawer());
 }
+
+export function navigateDrawerToggle() {
+  navigationRef.current?.dispatch(DrawerActions.toggleDrawer());
+}

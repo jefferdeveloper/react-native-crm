@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { IrootState } from "../../store/store";
 import {
   StyleSheet,
   View,
